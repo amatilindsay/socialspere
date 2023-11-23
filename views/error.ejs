@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error page</title>
+    <style>
+        body{
+            background-image: url("/a lady png.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+       .message{
+        margin: 100px auto;
+        max-width: 80%;
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <%-include('_header')%>
+    <main>
+    <div class="message">
+        <h1>oops!! Something went wrong</h1>
+        <h3><%=errorMessage%></h3>
+
+    </div>
+  </main>
+  <%-include('_footer')%>
+
+</body>
+</html>
